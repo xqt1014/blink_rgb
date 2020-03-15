@@ -14,9 +14,9 @@ char pswd[] = "**********";    /**WiFi密码**/
 // 以下此处的组件名称要和app端设置的匹配
 BlinkerButton Button1("btn1");
 BlinkerNumber Number1("num1");
-BlinkerText   Text1("tex-1");
-BlinkerText   Text2("tex-2");
-BlinkerText   Text3("tex-3");
+BlinkerText   Text1("tex-1");//R 0~255
+BlinkerText   Text2("tex-2");//G 0~255
+BlinkerText   Text3("tex-3");//B 0~255
 BlinkerRGB    RGB1("RGBKey"); 
 
 int counter = 0;  //无关指令计数
