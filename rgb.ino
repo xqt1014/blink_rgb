@@ -153,13 +153,13 @@ void setup() {
     SET_RGB(0,0,0,0);
     digitalWrite(13, HIGH);
   // 初始化blinker
-    Blinker.begin(auth, ssid, pswd);//连接WiFi和设备上线
-    Blinker.attachData(dataRead);//如果没有被绑定的组件被触发就执行这个回调
-    Button1.attach(button1_callback);//Button1这个组件被触发就执行这个回调
-    RGB1.attach(rgb1_callback);//注册调节颜色的回调函数
+    Blinker.begin(auth, ssid, pswd);             //连接WiFi和设备上线
+    Blinker.attachData(dataRead);                //如果没有被绑定的组件被触发就执行这个回调
+    Button1.attach(button1_callback);            //Button1这个组件被触发就执行这个回调
+    RGB1.attach(rgb1_callback);                  //注册调节颜色的回调函数
     BlinkerMIOT.attachPowerState(miotPowerState);
-    BlinkerMIOT.attachColor(miotColor);//小爱调节颜色
-    BlinkerMIOT.attachBrightness(miotBright);//小爱调节RGB亮度
+    BlinkerMIOT.attachColor(miotColor);          //小爱调节颜色
+    BlinkerMIOT.attachBrightness(miotBright);    //小爱调节RGB亮度
 }
 
 void loop() {
